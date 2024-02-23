@@ -4,10 +4,8 @@ import './MyModal.css'
 const MyModal = ({close}) => {
 
     useEffect(()=>{
-        document.body.style.backdropFilter=blur("50px");
         document.body.style.overflowY="hidden";
         return ()=>{
-        document.body.style.backdropFilter=blur("0px");
         document.body.style.overflowY="auto";
         }
     },[])
